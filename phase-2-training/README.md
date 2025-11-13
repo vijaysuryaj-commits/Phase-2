@@ -1,4 +1,5 @@
 # Context API
+
   context api is mainly used to avoid prop drilling.
   normally if we want to pass data from parent to a deeply nested component,
   we have to keep passing it through every component in between even if they don’t use it.
