@@ -1,6 +1,5 @@
 const redux = require('redux')
 
-
 const BUY_CAKE = 'BUY_CAKE'
 
 function buyCake() {
@@ -9,7 +8,6 @@ function buyCake() {
         info: "first redux action"
     }
 }
-
 
 // (previousState,action) => newState
 

@@ -51,3 +51,27 @@
 
   ->define async action creators
   ->async/sideeffects middleware
+
+### mapStateToProps
+
+  -> Takes data from the Redux store and gives it to components as props(Read from store), and can have ownProps from parent component
+
+### mapDispatchToProps
+
+  -> Gives component functions (props) that can dispatch actions.(Write to store (dispatch actions)), and can have ownProps from parent component
+
+### connect
+
+  ->A function that connects your React component to the Redux store by giving it the state (from mapStateToProps) and dispatch functions (from mapDispatchToProps) as props.
+
+### useSelector hook
+
+  ->equivalent to mapStateToProps
+  ->takes a function as paramter called as selector function
+  ->that function receives redux state as argument like mapStateToProps
+  ->returns whatever is returned by that selector function
+
+### useDispatch hook
+
+  -> used to dispatch an action
+  
