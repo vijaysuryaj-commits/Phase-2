@@ -55,22 +55,37 @@
 
 // export default App
 
-import { Provider } from "react-redux";
-import store from "./redux-examples/redux-toolkit/store";
-import CakeContainer from "./redux-examples/Components/cakeContainer";
-import IceCreamContainer from "./redux-examples/Components/IceCreamContainer";
-import UserContainer from "./redux-examples/Components/UserContainer";
+// import { Provider } from "react-redux";
+// import store from "./redux-examples/redux-toolkit/store";
+// import CakeContainer from "./redux-examples/Components/cakeContainer";
+// import IceCreamContainer from "./redux-examples/Components/IceCreamContainer";
+// import UserContainer from "./redux-examples/Components/UserContainer";
 
+// function App() {
+//   return (
+//     <Provider store={store}>
+//       <div>
+//         <CakeContainer />
+//         <IceCreamContainer />
+//         <UserContainer />
+//       </div>
+//     </Provider>
+//   );
+// }
+
+// export default App;
+
+import './App.css'
+import React from 'react'
+// import ParentComponent from './performance-optimization/ParentComponent'
+import Counter from './performance-optimization/Counter'
 function App() {
   return (
-    <Provider store={store}>
-      <div>
-        <CakeContainer />
-        <IceCreamContainer />
-        <UserContainer />
-      </div>
-    </Provider>
-  );
+    <div>
+      {/* <ParentComponent /> */}
+      <Counter />
+    </div>
+  )
 }
 
-export default App;
+export default App

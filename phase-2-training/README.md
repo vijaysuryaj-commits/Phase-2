@@ -75,3 +75,25 @@
 
   -> used to dispatch an action
   
+### React.memo
+
+  -> is a higher order component that will prevent a functional component to re-render if the props or states do not change
+
+in functions always consider reference equality
+two function having same behaviour doesnt mean they are equal(function before re-render and after re-render are different)
+
+### useCallback hook
+
+  ->useCallback is a hook that well return a memoized version of the callback function that only changes if one of the dependencies has changed
+  ->The function is recreated only when one of its dependencies changes.
+  -> it is useful when passing callbacks to optimized child components that rely on reference equality to prevent unnecessary renders
+
+### useMemo
+
+  ->useMemo returns a memoized value that is the result of a computation.
+  ->smilar to useCallback
+
+#### Difference b/w useCallback & useMemo
+
+  ->useCallback caches the function instance itself
+  ->useMemo caches the value returned by the function instance
