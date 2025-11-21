@@ -25,7 +25,7 @@ function Counter() {
     return (
         <div>
             <div>
-                <button onClick={incrementOne}>Counter One - {counterOne}</button>
+                <button onClick={incrementOne} data-testid="button-1">Counter One - {counterOne}</button>
                 {/* {isEven()? "Even":"Odd"} */}
                 {isEven? "Even":"Odd"}
 
