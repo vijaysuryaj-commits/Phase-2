@@ -32,6 +32,7 @@
   ->only way to change the state is to emit an action, an object describing what happened, have a "type" property describing type of the action
   ->to update state of the application write pure reducers(functions)-> take 2 arguments prevState and action and returns new state (prevState,action) => newState
 toBeInTheDocument
+
 ## combine reducers
 
   ->combine two or more reducers each maintains it own part of the global state object
@@ -153,11 +154,11 @@ two function having same behaviour doesnt mean they are equal(function before re
 
         The screen object is a global object that provides access to all the query functions (like getByText, findByRole, getAllByLabelText) bound to the document.body of the current test environment.
 
-##### only
+##### only / fit
 
         ->runs only the test with .only in a file that contains many tests
 
-##### skip
+##### skip / xit
 
         ->opposite to only
         ->skips the test with .skip in a file
@@ -197,3 +198,10 @@ two function having same behaviour doesnt mean they are equal(function before re
           example-> toBeInTheDocument()toBeInTheDocument
           docs for matchers-> jestjs.io/docs/using-matchers for javascript testing like toBe(4) for number matching and toMatch() for string match
           for react additional package is used jest/dom it provides custo matchers like toBeInTheDocument
+
+###### user-event
+
+          -> a companion library for testing library that simulates user interactions by dispatching the events that would happen if the interaction took place in a browser
+          ->has more features than fireEvent that is provided by the RTL
+          -> all user events are asynchronous so use async await
+          click(),dblclick(), tripleclick(),hover(),unhover()
